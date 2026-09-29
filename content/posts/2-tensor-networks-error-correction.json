@@ -1,0 +1,144 @@
+{
+  "slug": "tensor-networks-quantum-error-correction",
+  "title": "Codes are tensors, decoders are contractions",
+  "description": "A companion to our short video: how tensor networks describe quantum error-correcting codes, and how contracting them turns decoding into a problem we can compute.",
+  "category": "Video · Quantum error correction",
+  "readingMinutes": 6,
+  "video": {
+    "file": "tensor-networks-error-correction.mp4",
+    "poster": "tensor-networks-error-correction-poster.jpg",
+    "minutes": 3,
+    "seconds": 38,
+    "sizeMB": 14,
+    "caption": "From stabilizer codes and perfect tensors, through the HaPPY code and MERA, to toric-code decoding, statistical mechanics, thresholds and biased noise."
+  },
+  "sections": [
+    {
+      "heading": "Protecting fragile quantum information",
+      "paragraphs": [
+        "Qubits suffer bit flips and phase flips, and the no-cloning theorem forbids the simplest classical remedy: keeping backup copies. Quantum error correction instead spreads one logical qubit over many physical ones, so that local noise cannot reach the encoded information.",
+        "Stabilizer codes do this with a set of commuting Pauli parity checks. The code space is the joint +1 eigenspace of the checks. Measuring them yields an error syndrome, a pattern of violated checks that reveals information about the error without revealing, or disturbing, the encoded state.",
+        "The Knill–Laflamme condition states when recovery is possible. Projected onto the code space, the product E_a†E_b of any two correctable errors must act as a constant multiple of the identity. The environment then learns nothing about the logical state, and a recovery map exists."
+      ]
+    },
+    {
+      "heading": "An encoder is a tensor",
+      "paragraphs": [
+        "An encoding map is itself a tensor, with logical legs going in and physical legs coming out. It is an isometry, and the stabilizers appear as its symmetries: Pauli operators on the physical legs that leave the tensor unchanged.",
+        "Some tensors are especially useful. A perfect tensor is maximally entangled in a strong sense: any half of its legs maps isometrically onto the other half. The six-leg tensor of the five-qubit code is the standard example. Quantum LEGO treats such encoders as bricks. Contracting legs glues small codes into larger ones, and operator pushing carries logical operators through the network.",
+        "Familiar codes fit this picture. Concatenated codes are tree tensor networks, which can be decoded exactly from the leaves to the root; below threshold, each level roughly squares the error rate. Tiling perfect tensors on a hyperbolic disk gives the HaPPY code, a toy model of holography in which bulk operators can be reconstructed from suitable boundary regions. Read from top to bottom, MERA can likewise be viewed as an approximate error-correcting code."
+      ]
+    },
+    {
+      "heading": "The toric code as a tensor network",
+      "paragraphs": [
+        "Kitaev's toric code places qubits on the edges of a square lattice on a torus, with star and plaquette checks. Its ground states can be written as a PEPS with bond dimension two, a compact example of topological order in tensor-network form.",
+        "Errors create pairs of anyons at the ends of error strings. The syndrome shows where those endpoints are, not which string produced them. Two strings with the same endpoints differ by stabilizers when together they enclose a region; if the difference wraps around the torus, it acts as a logical operator. A decoder must therefore guess the class of the error, not the error itself."
+      ]
+    },
+    {
+      "heading": "Decoding as a partition function",
+      "paragraphs": [
+        "Maximum-likelihood decoding asks which equivalence class of errors is most probable given the syndrome. The probability of a class is a sum over every error in it, weighted by the noise model. For independent bit flips on the toric code, Dennis and coauthors showed that this sum is the partition function of a random-bond Ising model on the Nishimori line.",
+        "The optimal threshold then corresponds to that model's ordering transition. With perfect syndrome measurements, it is about 10.9% for independent bit flips; for depolarizing noise, the corresponding statistical model gives about 18.9%. These are code-capacity numbers, which ignore faulty measurements.",
+        "The partition function is itself a two-dimensional tensor network. Bravyi, Suchara and Vargo contracted it row by row as a boundary MPS, truncating to a bond dimension χ. A modest χ already gives near-optimal decoding for the surface code, at a cost that grows polynomially in the code size and χ."
+      ]
+    },
+    {
+      "heading": "Biased noise, time, and new codes",
+      "paragraphs": [
+        "Real hardware noise is often biased towards dephasing. Using a tensor-network decoder, Bonilla Ataides and coauthors showed that the XZZX surface code has thresholds that rise towards 50% as noise becomes purely dephasing. Here the decoder served as a numerical instrument for studying codes, not only as a practical tool.",
+        "Faulty syndrome measurements add a time direction, and decoding becomes a three-dimensional spacetime network that must be contracted approximately. Contracting a code network can also yield weight enumerators, which reveal the code distance and error-rate quantities for simple noise models.",
+        "For quantum LDPC codes, belief propagation struggles with short loops in the decoding graph, and tensor-network contraction can account for some of those loops. The cost of exact contraction grows quickly with system size, so the practical question is how much approximation each application can tolerate. Across these problems, tensor networks provide a common language for protected quantum information."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "E. Knill & R. Laflamme, Theory of quantum error-correcting codes, Phys. Rev. A 55, 900 (1997)",
+      "url": "https://doi.org/10.1103/PhysRevA.55.900"
+    },
+    {
+      "label": "E. Dennis, A. Kitaev, A. Landahl & J. Preskill, Topological quantum memory, J. Math. Phys. 43, 4452 (2002)",
+      "url": "https://doi.org/10.1063/1.1499754"
+    },
+    {
+      "label": "F. Pastawski, B. Yoshida, D. Harlow & J. Preskill, Holographic quantum error-correcting codes, JHEP 06 (2015) 149",
+      "url": "https://doi.org/10.1007/JHEP06(2015)149"
+    },
+    {
+      "label": "C. Cao & B. Lackey, Quantum Lego: building quantum error correction codes from tensor networks, PRX Quantum 3, 020332 (2022)",
+      "url": "https://doi.org/10.1103/PRXQuantum.3.020332"
+    },
+    {
+      "label": "S. Bravyi, M. Suchara & A. Vargo, Efficient algorithms for maximum likelihood decoding in the surface code, Phys. Rev. A 90, 032326 (2014)",
+      "url": "https://doi.org/10.1103/PhysRevA.90.032326"
+    },
+    {
+      "label": "H. Bombin et al., Strong resilience of topological codes to depolarization, Phys. Rev. X 2, 021004 (2012)",
+      "url": "https://doi.org/10.1103/PhysRevX.2.021004"
+    },
+    {
+      "label": "J. P. Bonilla Ataides et al., The XZZX surface code, Nat. Commun. 12, 2172 (2021)",
+      "url": "https://doi.org/10.1038/s41467-021-22274-1"
+    },
+    {
+      "label": "C. T. Chubb, General tensor network decoding of 2D Pauli codes (arXiv:2101.04125)",
+      "url": "https://arxiv.org/abs/2101.04125"
+    },
+    {
+      "label": "C. Piveteau, C. T. Chubb & J. M. Renes, Tensor network decoding beyond 2D (arXiv:2310.10722)",
+      "url": "https://arxiv.org/abs/2310.10722"
+    }
+  ],
+  "translations": {
+    "zh": {
+      "title": "码是张量，译码是缩并",
+      "description": "配合我们短片的一篇文章：张量网络如何描述量子纠错码，以及对它们进行缩并如何把译码变成一个可以计算的问题。",
+      "category": "视频 · 量子纠错",
+      "readingMinutes": 6,
+      "videoCaption": "从稳定子码与完美张量出发，经由 HaPPY 码与 MERA，一路讲到环面码译码、统计力学、阈值与偏置噪声。",
+      "sections": [
+        {
+          "heading": "保护脆弱的量子信息",
+          "paragraphs": [
+            "量子比特会发生比特翻转和相位翻转，而不可克隆定理禁止了最简单的经典补救办法：保留备份。量子纠错转而把一个逻辑量子比特分散到许多物理量子比特上，使局域噪声无法触及被编码的信息。",
+            "稳定子码借助一组相互对易的 Pauli 奇偶校验来实现这一点。码空间是这些校验算符共同的 +1 本征空间。测量它们会得到错误症状，即一组被违反的校验；它揭示了错误的信息，却不会揭示或扰动被编码的态。",
+            "Knill–Laflamme 条件说明了何时能够恢复。投影到码空间上之后，任意两个可纠正错误的乘积 E_a†E_b 都必须作用为恒等算符的常数倍。这样环境就得不到任何关于逻辑态的信息，恢复映射也随之存在。"
+          ]
+        },
+        {
+          "heading": "编码器就是一个张量",
+          "paragraphs": [
+            "编码映射本身就是一个张量：逻辑指标进入，物理指标出来。它是一个等距映射，而稳定子表现为它的对称性，即作用在物理指标上、使张量保持不变的 Pauli 算符。",
+            "有些张量特别有用。完美张量在很强的意义上是最大纠缠的：任意一半指标都等距地映射到另一半。五比特码的六指标张量就是标准例子。量子乐高（Quantum LEGO）把这样的编码器当作积木：缩并指标就把小码拼成大码，而算符推移则把逻辑算符沿网络传递。",
+            "熟悉的码都符合这一图像。级联码是树张量网络，可以从叶子到根被精确译码；在阈值以下，每一层大致把错误率平方一次。在双曲圆盘上铺满完美张量，就得到 HaPPY 码，这是一个全息的玩具模型，其中体算符可以从合适的边界区域重建出来。自上而下地看，MERA 同样可以被视为一种近似纠错码。"
+          ]
+        },
+        {
+          "heading": "作为张量网络的环面码",
+          "paragraphs": [
+            "Kitaev 的环面码把量子比特放在环面上正方晶格的边上，配以星形和方格校验。它的基态可以写成键维数为二的 PEPS，是拓扑序以张量网络形式出现的一个简洁例子。",
+            "错误会在错误弦的两端产生成对的任意子。症状显示端点的位置，却不告诉我们是哪条弦造成的。两条端点相同的弦，如果合起来围住一块区域，它们就只相差稳定子；如果差别绕环面一圈，它就作用为一个逻辑算符。因此译码器必须猜测的是错误所属的类，而不是错误本身。"
+          ]
+        },
+        {
+          "heading": "译码即配分函数",
+          "paragraphs": [
+            "最大似然译码问的是：给定症状，哪一个错误等价类的概率最大。一个类的概率是对其中所有错误按噪声模型加权求和。Dennis 等人证明，对于环面码上的独立比特翻转，这个和就是 Nishimori 线上随机键 Ising 模型的配分函数。",
+            "最优阈值于是对应于该模型的有序相变。在症状测量无误的情况下，独立比特翻转的阈值约为 10.9%；对于退极化噪声，相应的统计模型给出约 18.9%。这些是码容量（code capacity）意义下的数值，没有考虑测量出错。",
+            "这个配分函数本身就是一个二维张量网络。Bravyi、Suchara 与 Vargo 把它看作边界 MPS 逐行缩并，并截断到键维数 χ。对表面码而言，适中的 χ 就能得到接近最优的译码，计算开销随码的规模和 χ 多项式增长。"
+          ]
+        },
+        {
+          "heading": "偏置噪声、时间方向与新的码",
+          "paragraphs": [
+            "真实硬件的噪声往往偏向退相位。Bonilla Ataides 等人借助张量网络译码器表明，随着噪声变为纯退相位，XZZX 表面码的阈值升向 50%。在这里，译码器不只是实用工具，也是研究码性质的数值仪器。",
+            "症状测量出错会引入时间方向，译码随之变成一个三维时空网络，只能近似缩并。对码网络进行缩并还可以得到权重枚举子，由此读出码距，以及在简单噪声模型下与错误率相关的量。",
+            "对于量子 LDPC 码，置信传播难以处理译码图中的短回路，而张量网络缩并可以把其中一部分回路考虑进去。精确缩并的开销随系统规模迅速增长，因此实际问题在于每种应用能容忍多大的近似。在所有这些问题中，张量网络为受保护的量子信息提供了一种共同语言。"
+          ]
+        }
+      ]
+    }
+  }
+}

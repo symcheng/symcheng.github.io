@@ -1,0 +1,425 @@
+[
+  {
+    "date": "2026-08-19",
+    "title": "Holographic Bit Threads from String-Diagrammatic Quantum Information Flow",
+    "authors": [
+      "Yi-Yu Lin",
+      "Song Cheng"
+    ],
+    "venue": "Preprint",
+    "links": [
+      [
+        "arXiv:2608.19428",
+        "https://arxiv.org/abs/2608.19428"
+      ]
+    ]
+  },
+  {
+    "date": "2026-07-27",
+    "title": "Characterizing Pauli propagation via operator complexity",
+    "authors": [
+      "Yuguo Shao",
+      "Song Cheng",
+      "Zhengwei Liu"
+    ],
+    "venue": "Communications Physics",
+    "links": [
+      [
+        "Journal article",
+        "https://doi.org/10.1038/s42005-026-02789-z"
+      ]
+    ]
+  },
+  {
+    "date": "2026-05-30",
+    "title": "Complexity of tensor network simulation for noisy quantum circuits",
+    "authors": [
+      "Yuguo Shao",
+      "Zishuo Zhao",
+      "Song Cheng",
+      "Zhengwei Liu"
+    ],
+    "venue": "Preprint",
+    "links": [
+      [
+        "arXiv:2606.00474",
+        "https://arxiv.org/abs/2606.00474"
+      ]
+    ]
+  },
+  {
+    "date": "2026-04-01",
+    "title": "Efficient construction of stabilizer codes via ZX-calculus",
+    "authors": [
+      "Zipeng Wu",
+      "Song Cheng",
+      "Bei Zeng"
+    ],
+    "venue": "Academia Quantum",
+    "links": [
+      [
+        "Academia Quantum 3(2)",
+        "https://doi.org/10.20935/AcadQuant8237"
+      ]
+    ]
+  },
+  {
+    "date": "2025-10-25",
+    "title": "Characterizing Pauli Propagation via Operator Complexity",
+    "authors": [
+      "Yuguo Shao",
+      "Song Cheng",
+      "Zhengwei Liu"
+    ],
+    "venue": "Preprint",
+    "links": [
+      [
+        "arXiv:2510.22311",
+        "https://arxiv.org/abs/2510.22311"
+      ]
+    ]
+  },
+  {
+    "date": "2024-12-12",
+    "title": "Clifford Perturbation Approximation for Quantum Error Mitigation",
+    "authors": [
+      "Ruiqi Zhang",
+      "Yuguo Shao",
+      "Fuchuan Wei",
+      "Song Cheng",
+      "Zhaohui Wei",
+      "Zhengwei Liu"
+    ],
+    "venue": "Preprint",
+    "links": [
+      [
+        "arXiv:2412.09518",
+        "https://arxiv.org/abs/2412.09518"
+      ]
+    ]
+  },
+  {
+    "date": "2024-09-18",
+    "title": "Simulating Noisy Variational Quantum Algorithms: A Polynomial Approach",
+    "authors": [
+      "Yuguo Shao",
+      "Fuchuan Wei",
+      "Song Cheng",
+      "Zhengwei Liu"
+    ],
+    "venue": "Physical Review Letters",
+    "links": [
+      [
+        "Phys. Rev. Lett. 133, 120603",
+        "https://doi.org/10.1103/PhysRevLett.133.120603"
+      ]
+    ]
+  },
+  {
+    "date": "2023-06-09",
+    "title": "Simulating Noisy Variational Quantum Algorithms: A Polynomial Approach",
+    "authors": [
+      "Yuguo Shao",
+      "Fuchuan Wei",
+      "Song Cheng",
+      "Zhengwei Liu"
+    ],
+    "venue": "Preprint",
+    "links": [
+      [
+        "arXiv:2306.05804",
+        "https://arxiv.org/abs/2306.05804"
+      ]
+    ]
+  },
+  {
+    "date": "2023-04-17",
+    "title": "A ZX-Calculus Approach for the Construction of Graph Codes",
+    "authors": [
+      "Zipeng Wu",
+      "Song Cheng",
+      "Bei Zeng"
+    ],
+    "venue": "Preprint",
+    "links": [
+      [
+        "arXiv:2304.08363",
+        "https://arxiv.org/abs/2304.08363"
+      ]
+    ]
+  },
+  {
+    "date": "2021-04-01",
+    "title": "Simulating noisy quantum circuits with matrix product density operators",
+    "authors": [
+      "Song Cheng",
+      "Chenfeng Cao",
+      "Chao Zhang",
+      "Yongxiang Liu",
+      "Shi-Yao Hou",
+      "Pengxiang Xu",
+      "Bei Zeng"
+    ],
+    "venue": "Physical Review Research",
+    "links": [
+      [
+        "Phys. Rev. Research 3, 023005",
+        "https://doi.org/10.1103/PhysRevResearch.3.023005"
+      ]
+    ]
+  },
+  {
+    "date": "2021-03-08",
+    "title": "Supervised learning with projected entangled pair states",
+    "authors": [
+      "Song Cheng",
+      "Lei Wang",
+      "Pan Zhang"
+    ],
+    "venue": "Physical Review B",
+    "links": [
+      [
+        "Phys. Rev. B 103, 125117",
+        "https://doi.org/10.1103/PhysRevB.103.125117"
+      ]
+    ]
+  },
+  {
+    "date": "2020-09-12",
+    "title": "Supervised Learning with Projected Entangled Pair States",
+    "authors": [
+      "Song Cheng",
+      "Lei Wang",
+      "Pan Zhang"
+    ],
+    "venue": "Preprint",
+    "links": [
+      [
+        "arXiv:2009.09932",
+        "https://arxiv.org/abs/2009.09932"
+      ]
+    ]
+  },
+  {
+    "date": "2020-06-08",
+    "title": "Compressing deep neural networks by matrix product operators",
+    "authors": [
+      "Ze-Feng Gao",
+      "Song Cheng",
+      "Rong-Qiang He",
+      "Z. Y. Xie",
+      "Hui-Hai Zhao",
+      "Zhong-Yi Lu",
+      "Tao Xiang"
+    ],
+    "venue": "Physical Review Research",
+    "links": [
+      [
+        "Phys. Rev. Research 2, 023300",
+        "https://doi.org/10.1103/PhysRevResearch.2.023300"
+      ]
+    ]
+  },
+  {
+    "date": "2020-04-06",
+    "title": "Simulating Noisy Quantum Circuits with Matrix Product Density Operators",
+    "authors": [
+      "Song Cheng",
+      "Chenfeng Cao",
+      "Chao Zhang",
+      "Yongxiang Liu",
+      "Shi-Yao Hou",
+      "Pengxiang Xu",
+      "Bei Zeng"
+    ],
+    "venue": "Preprint",
+    "links": [
+      [
+        "arXiv:2004.02388",
+        "https://arxiv.org/abs/2004.02388"
+      ]
+    ]
+  },
+  {
+    "date": "2019-04-18",
+    "title": "Tree tensor networks for generative modeling",
+    "authors": [
+      "Song Cheng",
+      "Lei Wang",
+      "Tao Xiang",
+      "Pan Zhang"
+    ],
+    "venue": "Physical Review B",
+    "links": [
+      [
+        "Phys. Rev. B 99, 155131",
+        "https://doi.org/10.1103/PhysRevB.99.155131"
+      ]
+    ]
+  },
+  {
+    "date": "2019-04-11",
+    "title": "Compressing deep neural networks by matrix product operators",
+    "authors": [
+      "Ze-Feng Gao",
+      "Song Cheng",
+      "Rong-Qiang He",
+      "Z. Y. Xie",
+      "Hui-Hai Zhao",
+      "Zhong-Yi Lu",
+      "Tao Xiang"
+    ],
+    "venue": "Preprint",
+    "links": [
+      [
+        "arXiv:1904.06194",
+        "https://arxiv.org/abs/1904.06194"
+      ]
+    ]
+  },
+  {
+    "date": "2019-01-08",
+    "title": "Tree Tensor Networks for Generative Modeling",
+    "authors": [
+      "Song Cheng",
+      "Lei Wang",
+      "Tao Xiang",
+      "Pan Zhang"
+    ],
+    "venue": "Preprint",
+    "links": [
+      [
+        "arXiv:1901.02217",
+        "https://arxiv.org/abs/1901.02217"
+      ]
+    ]
+  },
+  {
+    "date": "2018-08-07",
+    "title": "Information Perspective to Probabilistic Modeling: Boltzmann Machines versus Born Machines",
+    "authors": [
+      "Song Cheng",
+      "Jing Chen",
+      "Lei Wang"
+    ],
+    "venue": "Entropy",
+    "links": [
+      [
+        "Entropy 20(8), 583",
+        "https://doi.org/10.3390/e20080583"
+      ]
+    ]
+  },
+  {
+    "date": "2018-02-02",
+    "title": "Equivalence of restricted Boltzmann machines and tensor network states",
+    "authors": [
+      "Jing Chen",
+      "Song Cheng",
+      "Haidong Xie",
+      "Lei Wang",
+      "Tao Xiang"
+    ],
+    "venue": "Physical Review B",
+    "links": [
+      [
+        "Phys. Rev. B 97, 085104",
+        "https://doi.org/10.1103/PhysRevB.97.085104"
+      ]
+    ]
+  },
+  {
+    "date": "2017-12-12",
+    "title": "Information Perspective to Probabilistic Modeling: Boltzmann Machines versus Born Machines",
+    "authors": [
+      "Song Cheng",
+      "Jing Chen",
+      "Lei Wang"
+    ],
+    "venue": "Preprint",
+    "links": [
+      [
+        "arXiv:1712.04144",
+        "https://arxiv.org/abs/1712.04144"
+      ]
+    ]
+  },
+  {
+    "date": "2017-07",
+    "title": "Quantum entanglement: from quantum states of matter to deep learning",
+    "authors": [
+      "Song Cheng",
+      "Jing Chen",
+      "Lei Wang"
+    ],
+    "venue": "Physics (Wuli)",
+    "links": [
+      [
+        "Physics 46(7), 416–423",
+        "https://wuli.iphy.ac.cn/article/doi/10.7693/wl20170702"
+      ]
+    ]
+  },
+  {
+    "date": "2017-06-12",
+    "title": "Phase transition of the q-state clock model: duality and tensor renormalization",
+    "authors": [
+      "Jing Chen",
+      "Hai-Jun Liao",
+      "Hai-Dong Xie",
+      "Xing-Jie Han",
+      "Rui-Zhen Huang",
+      "Song Cheng",
+      "Zhong-Chao Wei",
+      "Zhi-Yuan Xie",
+      "Tao Xiang"
+    ],
+    "venue": "Preprint",
+    "links": [
+      [
+        "arXiv:1706.03455",
+        "https://arxiv.org/abs/1706.03455"
+      ]
+    ]
+  },
+  {
+    "date": "2017-05-16",
+    "title": "Phase Transition of the q-State Clock Model: Duality and Tensor Renormalization",
+    "authors": [
+      "Jing Chen",
+      "Hai-Jun Liao",
+      "Hai-Dong Xie",
+      "Xing-Jie Han",
+      "Rui-Zhen Huang",
+      "Song Cheng",
+      "Zhong-Chao Wei",
+      "Zhi-Yuan Xie",
+      "Tao Xiang"
+    ],
+    "venue": "Chinese Physics Letters",
+    "links": [
+      [
+        "Chin. Phys. Lett. 34, 050503",
+        "https://doi.org/10.1088/0256-307X/34/5/050503"
+      ]
+    ]
+  },
+  {
+    "date": "2017-01-17",
+    "title": "Equivalence of restricted Boltzmann machines and tensor network states",
+    "authors": [
+      "Jing Chen",
+      "Song Cheng",
+      "Haidong Xie",
+      "Lei Wang",
+      "Tao Xiang"
+    ],
+    "venue": "Preprint",
+    "links": [
+      [
+        "arXiv:1701.04831",
+        "https://arxiv.org/abs/1701.04831"
+      ]
+    ]
+  }
+]

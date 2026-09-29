@@ -1,0 +1,41 @@
+name: Publish personal website
+
+# Intentionally manual: pushing source does not publish the website.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+      - name: Render bibliography
+        run: python3 scripts/render_publications.py
+      - name: Render courses
+        run: python3 scripts/render_courses.py
+      - name: Render blog
+        run: python3 scripts/render_blog.py
+      - name: Verify public files
+        run: python3 scripts/check_site.py
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4

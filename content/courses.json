@@ -1,0 +1,74 @@
+[
+  {
+    "term": "2026au",
+    "title": "Algorithm of Tensor Network representations",
+    "title_zh": "张量网络表示的算法",
+    "url": "https://www.bimsa.cn/research_detail/AlgofTenNetrep1.html"
+  },
+  {
+    "term": "2026sp",
+    "title": "Theory of Tensor Network Representations",
+    "title_zh": "张量网络表示的理论",
+    "url": "https://www.bimsa.cn/research_detail/TheofTenNetRep2.html"
+  },
+  {
+    "term": "2025au",
+    "title": "MPS & PEPS algorithms in condensed matter physics",
+    "title_zh": "凝聚态物理中的 MPS 与 PEPS 算法",
+    "url": "https://www.bimsa.cn/research_detail/MPSPEPalginconmatphy.html"
+  },
+  {
+    "term": "2025sp",
+    "title": "Theory of Tensor Network representations",
+    "title_zh": "张量网络表示的理论",
+    "url": "https://www.bimsa.cn/research_detail/TheofTenNetrep.html"
+  },
+  {
+    "term": "2024au",
+    "title": "Algorithm of Tensor Network representations",
+    "title_zh": "张量网络表示的算法",
+    "url": "https://www.bimsa.cn/research_detail/AlgofTenNetrep.html"
+  },
+  {
+    "term": "2024sp",
+    "title": "Theory of Tensor Network representations",
+    "title_zh": "张量网络表示的理论",
+    "url": "https://www.bimsa.cn/research_detail/ThoofTenNetrep.html"
+  },
+  {
+    "term": "2023au",
+    "title": "Brief Introduction to Tensor Network algorithms",
+    "title_zh": "张量网络算法简介",
+    "url": "https://www.bimsa.cn/research_detail/tennetalgII.html"
+  },
+  {
+    "term": "2023sp",
+    "title": "Brief introduction to Tensor Network theory",
+    "title_zh": "张量网络理论简介",
+    "url": "https://www.bimsa.cn/research_detail/tennetthy.html"
+  },
+  {
+    "term": "2022au",
+    "title": "Introduction to Tensor Network Algorithms",
+    "title_zh": "张量网络算法导论",
+    "url": "https://www.bimsa.cn/research_detail/TenNetAlg.html"
+  },
+  {
+    "term": "2022sp",
+    "title": "Tensor network representations and beyond",
+    "title_zh": "张量网络表示及其拓展",
+    "url": "https://www.bimsa.cn/research_detail/TenNetRep.html"
+  },
+  {
+    "term": "2021au",
+    "title": "Selected Topics on Frontiers of Tensor Networks",
+    "title_zh": "张量网络前沿专题",
+    "url": "https://www.bimsa.cn/research_detail/SelFroTenNet.html"
+  },
+  {
+    "term": "2021sp",
+    "title": "Machine Learning and Quantum Computing Algorithms Based on Tensor Networks",
+    "title_zh": "基于张量网络的机器学习与量子计算算法",
+    "url": "https://www.bimsa.cn/research_detail/TenNetMeaLerQuaComAlg.html"
+  }
+]

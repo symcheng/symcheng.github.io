@@ -1,0 +1,64 @@
+/* The light palette inherits the original site styles without changes. */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 9px;
+  min-height: 40px;
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.2;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.theme-icon { width: 18px; height: 18px; flex-shrink: 0; }
+.sun-icon { display: none; }
+[data-theme="dark"] .sun-icon { display: block; }
+[data-theme="dark"] .moon-icon { display: none; }
+
+/* Dark mode borrows the chalkboard and chalk colors from the illustrations. */
+:root[data-theme="dark"] {
+  --paper: #1a2b23;
+  --white: #ece6d6;
+  --ink: #ece6d6;
+  --green: #f4eedf;
+  --accent: #e3c067;
+  --muted: #a8b8aa;
+  --line: #34493e;
+  --gold: #e8c25a;
+  --tape: rgba(236, 230, 214, .34);
+  --panel: #223a2e;
+}
+[data-theme="dark"] body {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+[data-theme="dark"] ::selection { background: #4a6b52; color: #f4eedf; }
+[data-theme="dark"] .hero-intro { color: #cfd3c4; }
+[data-theme="dark"] .button,
+[data-theme="dark"] .skip-link { background: #35604a; color: #f4eedf; }
+[data-theme="dark"] .button:hover { background: #417256; }
+[data-theme="dark"] .portrait-frame { background: #355644; }
+[data-theme="dark"] .article-body p { color: #d3d5c7; }
+[data-theme="dark"] .entry-index { color: #9fb59e; }
+[data-theme="dark"] .entry-meta span:not([data-en]) { color: #a7b4aa; }
+[data-theme="dark"] .entry-link { border-bottom-color: #627e68; }
+[data-theme="dark"] .paper-link,
+[data-theme="dark"] .article-sources a { text-decoration-color: #6f8b73; }
+[data-theme="dark"] .tensor-figure { background: #213529; }
+[data-theme="dark"] .tensor-figure g[stroke] { stroke: #a6c6ac; }
+[data-theme="dark"] .tensor-figure g[fill="#173e35"] { fill: #365d45; }
+[data-theme="dark"] .tensor-figure g[fill="#376253"] { fill: #c4d5bc; }
+
+@media (max-width: 1200px) and (min-width: 761px) {
+  .theme-label { display: none; }
+  .theme-toggle { width: 40px; padding: 9px; }
+}
+@media (max-width: 760px) {
+  .theme-toggle { min-width: 40px; min-height: 40px; padding: 9px; }
+  .theme-label { display: none; }
+  .site-header { column-gap: 12px; }
+}
