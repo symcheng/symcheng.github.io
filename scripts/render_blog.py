@@ -78,7 +78,7 @@ def video_figure(post):
     src, poster = f'../../assets/video/{video["file"]}', f'../../assets/video/{video["poster"]}'
     minutes, seconds, size = video["minutes"], video["seconds"], video["sizeMB"]
     download = i18n(f"Download the video (MP4, {size} MB)", f"下载视频（MP4，{size} MB）", "a", f' href="{src}"')
-    return f'''<figure class="film article-film"><div class="film-screen"><video controls preload="metadata" playsinline poster="{poster}" width="1920" height="1080" aria-describedby="film-description"><source src="{src}" type="video/mp4">{download}</video></div><figcaption>{i18n(video["caption"], post["translations"]["zh"]["videoCaption"], "p", ' id="film-description"')}{i18n(f"{minutes} min {seconds} s, English narration with captions and references", f"{minutes} 分 {seconds} 秒，英文旁白、字幕及参考文献", "span", ' class="film-meta"')}</figcaption></figure>'''
+    return f'''<figure class="film article-film"><div class="film-screen"><video controls preload="metadata" playsinline poster="{poster}" width="1920" height="1080" aria-describedby="film-description"><source src="{src}" type="video/mp4">{download}</video></div><figcaption>{i18n(video["caption"], post["translations"]["zh"]["videoCaption"], "p", ' id="film-description"')}{i18n(f"{minutes} min {seconds} s, made with Claude", f"{minutes} 分 {seconds} 秒，由 Claude 制作", "span", ' class="film-meta"')}</figcaption></figure>'''
 
 
 blog_dir = PUBLIC / "blog"
